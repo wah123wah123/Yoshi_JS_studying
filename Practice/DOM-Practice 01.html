@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" content="请使用两种方法在body元素中插入一个按钮：
+        <input id=“btn” type=“button” value=“按钮”/>，一种是使用appendChild()方法，另外一种是使用innerHTML属性。">
+        <title>JS-DOM进阶练习——编程题</title>
+        <script>
+            window.onload=function(){
+                var oBtn=document.createElement('input')
+                oBtn.id='btn'
+                oBtn.type='button'
+                oBtn.value='按钮'
+                var oBody=document.getElementsByTagName('body')[0]
+                oBody.appendChild(oBtn)
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
